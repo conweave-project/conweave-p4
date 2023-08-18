@@ -18,3 +18,14 @@ It would be hard to exactly reproduce the testbed setup and evaluation results i
 For artifact evaluation, feel free to skip this as the majority of results in the paper are executed by RDMA NS-3 simulator that allows integrating various environment conditions that are hard to be done on physical testbed, and prevent randomness for fair comparative studies versus baseline existing solutions.
 
 In near future, we will provide a _simplified_ program that can be run on simple testbed and easily reproducible. 
+
+### Credit
+
+```
+@inproceedings{song2023conweave,
+  title={Network Load Balancing with In-network Reordering Support for RDMA},
+  author={Song, Cha Hwan and Khooi, Xin Zhe and Joshi, Raj and Choi, Inho and Li, Jialin and Chan, Mun Choon},
+  booktitle={Proceedings of SIGCOMM},
+  year={2023}
+}
+```
