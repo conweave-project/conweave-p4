@@ -75,7 +75,7 @@ control SwitchIngress(
              ********************************************************************************/
 
             if (meta.conweave_on_off == 1 && meta.flag_rdma_data == 1) { /* conweave ON and RDMA DATA pkt */
-                do_categorize_conweave_logical_step.apply(); /* categorize for p4-compiler-friendly coding (SrcToR/DstToR) */
+                do_categorize_conweave_logical_step.apply(); /* categorize with p4-compiler-friendly coding (SrcToR/DstToR) */
 
 				/*------------------------------------------------------------------
 							Common Block (Rx/Tx) - ConWeave Entry Lookup
