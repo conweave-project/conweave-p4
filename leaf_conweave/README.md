@@ -12,7 +12,7 @@ Logically, ConWeave implementation is categorized into two parts based on "where
 ### Virtual Topology
 Note that this repository is used to evaluate ConWeave with our own testbed with 16 RNICs on a _virtualized switching topology_.
 Under that virtualized setting, it becomes highly complicated to distinguish whether the virtual switch corresponds to `SrcToR` or `DstToR` for the given input packet. 
-This logic is implemented using some match-action tables (see ![lines](https://github.com/conweave-project/conweave-p4/blob/1db645659574ffe15100bc4f3c75ba2e99548025/leaf_conweave/p4src/includes/conweave_ingress.p4#L77-L78)) and assignment `switch_id` to ports:
+This logic is implemented using some match-action tables (see [lines](https://github.com/conweave-project/conweave-p4/blob/1db645659574ffe15100bc4f3c75ba2e99548025/leaf_conweave/p4src/includes/conweave_ingress.p4#L77-L78)) and assignment `switch_id` to ports:
 ```c
 ...
 get_switch_id.apply();   	/* -> meta.switch_id */
