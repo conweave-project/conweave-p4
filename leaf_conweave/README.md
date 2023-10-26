@@ -9,7 +9,7 @@ Logically, ConWeave implementation is categorized into two parts based on "where
 (1) Source ToR (or `SrcToR`) - in case where the packet comes from the sender RNIC, this is the first hop for the packet.
 (2) Destination ToR (or `DstToR`) - in case where the switch is connected to the receiver RNIC and this is the last hop for the packet.
 
-### ![Source ToR (Ingress)](https://github.com/conweave-project/conweave-p4/blob/1db645659574ffe15100bc4f3c75ba2e99548025/leaf_conweave/p4src/includes/conweave_ingress.p4#L88-L308)
+### [Source ToR (Ingress)](https://github.com/conweave-project/conweave-p4/blob/1db645659574ffe15100bc4f3c75ba2e99548025/leaf_conweave/p4src/includes/conweave_ingress.p4#L88-L308)
 At SrcToR, DATA packet gets a proper ConWeave header and transmitted to DstToR. The packet checks whether the timeout (for RTT_REQUEST) happened.
 If not, it continues to be sent to the current path. If timeout, it updates the epoch/reroute status and prepares rerouting.
 
