@@ -11,7 +11,7 @@ We used `BF-SDE-9.11.1` to compile and run the program.
 
 ### Artifact - P4 Source Code
 `leaf_conweave` is a repo of ConWeave p4 source code running on leaf (ToR) switches. 
-For details, please refer to ![README](/leaf_conweave/README.md).
+For details, please refer to [README](/leaf_conweave/README.md).
 
 **_NOTE:_** The current repository is simply provided as a reference code. 
 It would be hard to exactly reproduce the testbed setup and evaluation results in the paper because of our complex testbed environment (e.g., by virtualized topology and its adapted codebase).
