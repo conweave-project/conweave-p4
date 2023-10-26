@@ -3,8 +3,3 @@
 
 # Vscode
 .vscode/*
-
-# temp
-leaf_conweave/c++/**/*
-leaf_conweave/cp/**/*
-leaf_conweave/tester/**/*

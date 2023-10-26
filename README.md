@@ -9,9 +9,9 @@ We used `BF-SDE-9.11.1` to compile and run the program.
 * `leaf_conweave_resource` is a repo to solely evaluate the data-plane resource consumption of ConWeave mechanism.
 * `leaf_conweave_resource/mau.resources.log` is the output log files, showing percentages of resource consumption based on `p4-build`.
 
-### Artifact - P4 Source Code
+
+### [Artifact - P4 Source Code](leaf_conweave/README.md)
 `leaf_conweave` is a repo of ConWeave p4 source code running on leaf (ToR) switches. 
-For details, please refer to [README](/leaf_conweave/README.md).
 
 **_NOTE:_** The current repository is simply provided as a reference code. 
 It would be hard to exactly reproduce the testbed setup and evaluation results in the paper because of our complex testbed environment (e.g., by virtualized topology and its adapted codebase).
@@ -19,6 +19,17 @@ It would be hard to exactly reproduce the testbed setup and evaluation results i
 For artifact evaluation, feel free to skip this as the majority of results in the paper are executed by RDMA NS-3 simulator that allows integrating various environment conditions that are hard to be done on physical testbed, and prevent randomness for fair comparative studies versus baseline existing solutions.
 
 If time allows, we will provide a _simplified_ / _portable_ program that is runnable on much simpler testbed and provides easy reproducibility. 
+
+### [Toy Example - Advanced Flow Control](native_afc/README.md)
+
+Some Tofino2 users have difficulty to use the feature of queue pause/resume using AFC. 
+To this end, we provide a toy example so that you can easily run AFC and test whether the queue is indeed paused or not. 
+
+
+### [Toy Example - DCQCN ECN-Marking Implementation](native_dcqcn/README.md)
+
+For RDMA testbed setup, you need to configure p4 switch with ECN-marking for DCQCN or DCTCP. 
+We provide an example script of DCQCN implementation on Tofino1.  
 
 ### Credit
 
