@@ -14,7 +14,7 @@ At SrcToR, DATA packet gets a proper ConWeave header and transmitted to DstToR. 
 If not, it continues to be sent to the current path. If timeout, it updates the epoch/reroute status and prepares rerouting.
 
 <figure>
-  <img src="figs/system-flowchart-rerouting.pdf" alt="">
+  <img src="/figs/system-flowchart-rerouting.pdf" alt="">
 </figure>
 
 
