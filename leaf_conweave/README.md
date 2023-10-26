@@ -13,8 +13,9 @@ Logically, ConWeave implementation is categorized into two parts based on "where
 At SrcToR, DATA packet gets a proper ConWeave header and transmitted to DstToR. The packet checks whether the timeout (for RTT_REQUEST) happened.
 If not, it continues to be sent to the current path. If timeout, it updates the epoch/reroute status and prepares rerouting.
 
-![Ingress SrcToR Workflow](./figs/system-flowchart-rerouting.pdf)
-
+<figure>
+  <img src="https://github.com/conweave-project/conweave-p4/blob/main/leaf_conweave/figs/system-flowchart-rerouting.pdf" alt="">
+</figure>
 
 
 
