@@ -10,7 +10,7 @@ tm.sched_adv_fc_mode_enable_set(dev=0, pipe=pipe_id, enable=True)
 rst = tm.sched_adv_fc_mode_enable_get(dev=0, pipe=pipe_id)
 print("After, enable mode on the pipe is " + str(rst))
 
-# Step 1: enable AFC *mode* on the queue
+# Step 2: enable AFC *mode* on the queue
 q_mode = tm.sched_q_adv_fc_mode_get(dev=0, port=dev_port, q=qid)
 print("Default queue mode is " + str(q_mode))
 tm.sched_q_adv_fc_mode_set(dev=0, port=dev_port, q=qid, mode=1) # mode: 1 is XOFF, 0 if CREDIT
